@@ -1,0 +1,87 @@
+#hero {
+    .hero-heading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem 0rem;
+        & h3 {
+            font-size: 1.5rem;
+        }
+    }
+    .address-container {
+        background: $button-color;
+        margin: .5rem 5%;
+        padding: .5rem 1rem;
+        border-radius: .5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .left-side-address {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            & i {
+                font-size: 1.5rem;
+            }
+            #inputField {
+                font-size: 1rem;
+                border: none;
+                background: transparent;
+            }
+        }
+        .right-side-address {
+            #addressBtn {
+                border: none;
+                background: transparent;
+                cursor: pointer;
+                & i {
+                    font-size: 1.5rem;
+                    // font-weight: 400;
+                }
+            }
+        }
+    }
+    .border-line {
+        border: #6b7280 solid 2px;
+    }
+    .current-location-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .currentLocationBtn {
+            border: none;
+            border-radius: 2rem;
+            background: #E9F8F5;
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            padding: .5rem 1.5rem;
+            cursor: pointer;
+            & i {
+                color: $button-bg;
+                font-size: 1.2rem;
+            }
+            & p {
+                color: $button-bg;
+                font-weight: bold;
+            }
+        }
+    }
+    .category-products {
+        margin: 0rem 20%;
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+        .first-row {
+            display: flex;
+            justify-content: space-between;
+        }
+        .second-row {
+            display: flex;
+            justify-content: center;
+        }
+        .third-row {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}

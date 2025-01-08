@@ -1,0 +1,43 @@
+#categories {
+    background: $button-color;
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2.5rem 0rem;
+        .category-image-container {
+            width: 30%;
+            & img {
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+        }
+        .categories-heading {
+            & h3 {
+                font-size: 1.25rem;
+            }
+        }
+    }
+    .categories-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: .5rem;
+        padding: 0rem 1rem;
+        & a {
+            text-decoration: none;
+            background: #FFF3DA;
+            color: $text-color;
+            padding: .5rem;
+            text-align: center;
+            border-radius: 1rem;
+            font-size: .75rem;
+            font-weight: 600;
+            &:hover {
+                background: $bg-color;
+                color: $button-bg;
+            }
+        }
+    }
+}

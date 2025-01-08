@@ -1,0 +1,117 @@
+#footer {
+    // background: url(../Images/footer-wave-desktop.svg)no-repeat;
+    background: #1D1D1D;
+    padding: 0rem 2rem;
+    color: $button-color;
+    .min-together {
+        .footer-glovo {
+            width: 35%;
+            & a {
+                text-decoration: none;
+                & img {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                }
+            }
+        }
+    }
+    .min-together-text {
+        padding: 1rem 0rem;
+        & h3 {
+            & a {
+                text-decoration: none;
+                color: $button-color;
+                font-size: 1rem;
+            }
+        }
+        & p {
+            & a {
+                font-size: .8rem;
+                color: $button-color;
+                text-decoration: none;
+            }
+        }
+    }
+    .interests {
+            & h3 {
+                text-decoration: none;
+                color: $button-color;
+                font-size: 1rem;
+            }
+            & p {
+                & a {
+                    font-size: .8rem;
+                    color: $button-color;
+                    text-decoration: none;
+                }
+            }
+    }
+    .follow-us {
+        & h3 {
+            & a {
+                text-decoration: none;
+            color: $button-color;
+            font-size: 1rem;
+            }
+        }
+        & p {
+           & a {
+                font-size: .8rem;
+                color: $button-color;
+                text-decoration: none;
+           } 
+        }
+    }
+    .categories {
+        & h3 {
+            text-decoration: none;
+            color: $button-color;
+            font-size: 1rem;
+        }
+        & p {
+           & a {
+            font-size: .8rem;
+            color: $button-color;
+            text-decoration: none;
+           } 
+        }
+    }
+    .app-store-google-play {
+        display: flex;
+        align-items: center;
+        // justify-content: space-between;
+        gap: 1rem;
+        padding: .5rem 0rem;
+        .app-store {
+            & a {
+                width: 50%;
+                & img {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                }
+            }
+        }
+        .google-play {
+            & a {
+                width: 50%;
+                & img {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                }
+            }
+        }
+    }
+    .terms-condition {
+        padding: 2rem 0rem;
+        & h3 {
+            & a {
+                text-decoration: none;
+                color: $button-color;
+                font-size: 1rem; 
+            }
+        }
+    }
+}

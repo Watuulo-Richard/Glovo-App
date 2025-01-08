@@ -1,0 +1,59 @@
+#together {
+    background: $button-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .together-icon {
+        width: 30%;
+        & img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    }
+    .together-heading {
+        & h3 {
+            font-size: 1.5rem;
+        }
+    }
+    .together-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0rem;
+        .together-image-container {
+            width: 80%;
+            & img {
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+        }
+        .together-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            & h3 {
+                padding: .5rem 0rem;
+            }
+            & p {
+                font-size: .75rem;
+                margin: 1rem 0rem;
+            }
+        }
+        .registerBtn {
+            border: none;
+            background: $button-bg;
+            color: $button-color;
+            font-size: 1rem;
+            font-weight: bold;
+            padding: .5rem 2rem;
+            border-radius: 2rem;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Demo styles -->
+    <link rel="stylesheet" href="./styles.css">
+    <title>Glovo-App</title>
+<!-- Demo styles -->
+<style>
+    html,
+    body {
+      position: relative;
+      /* height: 100%; */
+    }
+
+    /* body { */
+      /* background: #eee; */
+      /* font-family: Helvetica Neue, Helvetica, Arial, sans-serif; */
+      /* font-size: 14px; */
+      /* color: #000; */
+      /* margin: 0;
+      padding: 0; */
+    /* } */
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+      /* padding: 50px; */
+      padding: 1rem;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+    <div class="food-container">
+        <nav class="second-nav">
+            <div class="nav-container">
+                <div class="left-side-nav">
+                    <div class="mobile-hamburg-menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="logo">
+                        <a href="#">
+                            <div class="logo-image">
+                                <img src="./Images/image (1).svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="login-container">
+                    <button type="button" class="loginBtn" id="loginBtn" class="btn">Login</button>
+                </div>
+            </div>
+            <section id="hero">
+                <div class="address-container border-line">
+                    <div class="left-side-address">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input type="text" id="inputField" placeholder="What's your address?"> 
+                    </div>
+                    <div class="right-side-address">
+                        <button type="button" id="addressBtn" class="btn">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </nav>
+        <section id="filter-section">
+            <div class="filter-flex">
+                <div class="button-filter">
+                    <button id="filters">
+                        <img src="./Other-Images/filterImage.png" alt="">
+                    </button>
+                    <p>Filters></p>
+                </div>
+                <div class="link">
+                    <a href="#" id="filters">
+                        <div class="link-image">
+                            <img src="./Other-Images/7966a0cc118b81663a95b245822709333429929904799173ccd4b083a785.png" alt="">
+                        </div>
+                    </a>
+                    <p>Chicken</p>
+                </div>
+                <div class="link">
+                    <a href="#" id="filters">
+                        <div class="link-image">
+    
+                            <img src="./Other-Images/d23bfe6f6728283245c790aa74ef05d387fe227f21b4337a35416c4cdab4.png" alt="">
+                        </div>
+                    </a>
+                    <p>Fast food</p>
+                </div>
+                <div class="link">
+                    <a href="#" id="filters">
+                        <div class="link-image">
+                            <img src="./Other-Images/8c29a217d692ffec5fa6e3fba255bc6691f4f81da1fe72293a8a271a2493.png" alt="">
+                        </div>
+                    </a>
+                    <p>Halal</p>
+                </div>
+            </div>
+        </section>
+        <section id="food-details">
+            <div class="food-heading">
+                <h3>Food</h3>
+            </div>
+            <div class="promotions">
+                <div class="left-promotion">
+                    <div class="promotions-image-container">
+                        <img src="./Other-Images/promotions.svg" alt="">
+                    </div>
+                    <h3>Promotions</h3>
+                </div>
+                <div class="right-promotion">
+                    <div class="promotions-icon">
+                        <a href="#">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="card">
+                    <a href="#">
+                        <div class="image-container">
+                            <img src="./Other-Images/71fab2eebe339941504ff271edbda1054d742092cfed881e728ec291d003 (1).png" alt="">
+                        </div>
+                        <div class="card-text">
+                            <h4>The Food Hub</h4>
+                            <p>Burgers</p>
+                        </div>
+                        <div class="card-delivery">
+                            <div class="card-image-container">
+                                <img src="./Other-Images/bicycle-yellow.svg" alt="">
+                            </div>
+                            <p>Free</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <a href="#">
+                        <div class="image-container">
+                            <img src="./Other-Images/71fab2eebe339941504ff271edbda1054d742092cfed881e728ec291d003 (1).png" alt="">
+                        </div>
+                        <div class="card-text">
+                            <h4>The Food Hub</h4>
+                            <p>Burgers</p>
+                        </div>
+                        <div class="card-delivery">
+                            <div class="card-image-container">
+                                <img src="./Other-Images/bicycle-yellow.svg" alt="">
+                            </div>
+                            <p>Free</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <a href="#">
+                        <div class="image-container">
+                            <img src="./Other-Images/71fab2eebe339941504ff271edbda1054d742092cfed881e728ec291d003 (1).png" alt="">
+                        </div>
+                        <div class="card-text">
+                            <h4>The Food Hub</h4>
+                            <p>Burgers</p>
+                        </div>
+                        <div class="card-delivery">
+                            <div class="card-image-container">
+                                <img src="./Other-Images/bicycle-yellow.svg" alt="">
+                            </div>
+                            <p>Free</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <a href="#">
+                        <div class="image-container">
+                            <img src="./Other-Images/71fab2eebe339941504ff271edbda1054d742092cfed881e728ec291d003 (1).png" alt="">
+                        </div>
+                        <div class="card-text">
+                            <h4>The Food Hub</h4>
+                            <p>Burgers</p>
+                        </div>
+                        <div class="card-delivery">
+                            <div class="card-image-container">
+                                <img src="./Other-Images/bicycle-yellow.svg" alt="">
+                            </div>
+                            <p>Free</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <a href="#">
+                        <div class="image-container">
+                            <img src="./Other-Images/71fab2eebe339941504ff271edbda1054d742092cfed881e728ec291d003 (1).png" alt="">
+                        </div>
+                        <div class="card-text">
+                            <h4>The Food Hub</h4>
+                            <p>Burgers</p>
+                        </div>
+                        <div class="card-delivery">
+                            <div class="card-image-container">
+                                <img src="./Other-Images/bicycle-yellow.svg" alt="">
+                            </div>
+                            <p>Free</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <a href="#">
+                        <div class="image-container">
+                            <img src="./Other-Images/71fab2eebe339941504ff271edbda1054d742092cfed881e728ec291d003 (1).png" alt="">
+                        </div>
+                        <div class="card-text">
+                            <h4>The Food Hub</h4>
+                            <p>Burgers</p>
+                        </div>
+                        <div class="card-delivery">
+                            <div class="card-image-container">
+                                <img src="./Other-Images/bicycle-yellow.svg" alt="">
+                            </div>
+                            <p>Free</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+  
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+            effect: "flip",
+            grabCursor: true,
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            });
+        </script>
+</body>
+</html>

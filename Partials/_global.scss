@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $default-font;
+    background: black;
+    color: $text-color;
+    
+    .container {
+        max-width: 360px;
+        margin: 0 auto;
+        min-height: 100vh;
+        background: $bg-color;
+        // padding: .5rem;
+    }
+    .food-container {
+        max-width: 360px;
+        margin: 0 auto;
+        min-height: 100vh;
+        background: $button-color;
+    }
+}

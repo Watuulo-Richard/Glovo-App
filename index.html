@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles.css">
+    <title>Glovo-App</title>
+</head>
+<body>
+    <div class="container">
+        <nav  class="first-nav">
+            <div class="logo">
+                <a href="#">
+                    <div class="logo-image">
+                        <img src="./Images/image (1).svg" alt="">
+                    </div>
+                </a>
+            </div>
+            <!-- <div class="nav-links">
+
+            </div> -->
+            
+            <!-- <div class="hamburg-menu">
+                <div class="icon-container">
+                    <i class="fa-regular fa-user"></i>
+                </div>
+                <div class="icon-container-two">
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+            </div> -->
+            <div class="login-container">
+                <button type="button" class="loginBtn" id="loginBtn" class="btn">Login</button>
+            </div>
+        </nav>
+        <section id="hero">
+            <div class="hero-heading">
+                <h3>Explore Kampala</h3>
+            </div>
+            <div class="address-container">
+                <div class="left-side-address">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input type="text" id="inputField" placeholder="What's your address?"> 
+                </div>
+                <div class="right-side-address">
+                    <button type="button" id="addressBtn" class="btn">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="current-location-container">
+                <button type="button" class="currentLocationBtn">
+                    <i class="fa-solid fa-location-arrow"></i>
+                    <p>Use current location</p>
+                </button>
+            </div>
+            <div class="category-products">
+                <div class="first-row">
+                    <div class="product-card">
+                        <a href="#">
+                            <div class="product-card-image">
+                                <img src="./Images/cc38634d7f470f25c61bb209899f12a44032cb0251409b4cd75368da5c88.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p>Shops</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-card">
+                        <a href="#">
+                            <div class="product-card-image">
+                                <img src="./Images/6590ca182c60df74bfef8aa3a427f17c50a32824bc9979e4b5d5a40dc5a8.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p>Groceries</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="second-row">
+                    <div class="product-card">
+                        <a href="#">
+                            <div class="product-card-image">
+                                <img src="./Images/c662b1ad74dc7c385a968aacf39778c327509a9d4e3e3d060a420c9c293d.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p>Food</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="third-row">
+                    <div class="product-card">
+                        <a href="#">
+                            <div class="product-card-image">
+                                <img src="./Images/abe0e6d60c9e6e62d73ede9d1eec870dac15283d32b5aeee41045402e466.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p>Pharmacy & Beauty</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-card">
+                        <a href="#">
+                            <div class="product-card-image">
+                                <img src="./Images/3ec9bff5a4a85485922e6c6f74de529bc7981ac30e5766e8a8648c7d3f28.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p>Package Delivery</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="stores">
+            <div class="stores-heading">
+                <i class="fa-solid fa-comment-sms"></i>
+                <p>Stores you might like</p>
+            </div>
+            <div class="store-cards-container">
+                <div class="store-card">
+                    <div class="store-card-container">
+                        <div class="store-image-card-container">
+                            <img src="./Images/c9efcd63fa9333697bfeadd414184667f1056e0b0e82ba64c8feb6ea2b8a.jpeg" alt="">
+                        </div>
+                        <div class="store-label">
+                            <p>Chicken</p>
+                        </div>
+                    </div>
+                    <div class="store-heading">
+                        <h3>KFC</h3>
+                    </div>
+                    <div class="store-likes">
+                        <div class="store-likes-image-container">
+                            <img src="./Images/rating_good.png" alt="">
+                        </div>
+                        <div class="numberOfLikes">
+                            <p>94%</p>
+                        </div>
+                        <div class="likes-delivery">
+                            <i class="fa-solid fa-truck"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="store-card">
+                    <div class="store-card-container">
+                        <div class="store-image-card-container">
+                            <img src="./Images/71fab2eebe339941504ff271edbda1054d742092cfed881e728ec291d003.jpeg" alt="">
+                        </div>
+                        <div class="store-label">
+                            <p>Burgers</p>
+                        </div>
+                    </div>
+                    <div class="store-heading">
+                        <h3>The Food Hub</h3>
+                    </div>
+                    <div class="store-likes">
+                        <div class="store-likes-image-container">
+                            <img src="./Images/rating_good.png" alt="">
+                        </div>
+                        <div class="numberOfLikes">
+                            <p>96%</p>
+                        </div>
+                        <div class="likes-delivery">
+                            <i class="fa-solid fa-truck"></i>
+                        </div>
+                    </div>
+                    <div class="discount">
+                        <p>-40%</p>
+                    </div>
+                </div>
+                <div class="store-card">
+                    <div class="store-card-container">
+                        <div class="store-image-card-container">
+                            <img src="./Images/d54e69fdf14df41b5c1401a0952009bb3994e19e8473f89cc56d59d5227c.jpeg" alt="">
+                        </div>
+                        <div class="store-label">
+                            <p>Chicken</p>
+                        </div>
+                    </div>
+                    <div class="store-heading">
+                        <h3>KFC</h3>
+                    </div>
+                    <div class="store-likes">
+                        <div class="store-likes-image-container">
+                            <img src="./Images/rating_good.png" alt="">
+                        </div>
+                        <div class="numberOfLikes">
+                            <p>94%</p>
+                        </div>
+                        <div class="likes-delivery">
+                            <i class="fa-solid fa-truck"></i>
+                        </div>
+                    </div>
+                    <div class="discount">
+                        <p>-30%</p>
+                    </div>
+                </div>
+                <div class="store-card">
+                    <div class="store-card-container">
+                        <div class="store-image-card-container">
+                            <img src="./Images/8aa7ba4926046258619146db5c61eab9bdfdf933cb9ef0358eca6c2e6e93.jpeg" alt="">
+                        </div>
+                        <div class="store-label">
+                            <p>Chicken</p>
+                        </div>
+                    </div>
+                    <div class="store-heading">
+                        <h3>Meza Shawarma</h3>
+                    </div>
+                    <div class="store-likes">
+                        <div class="store-likes-image-container">
+                            <img src="./Images/rating_good.png" alt="">
+                        </div>
+                        <div class="numberOfLikes">
+                            <p>97%</p>
+                        </div>
+                        <div class="likes-delivery">
+                            <i class="fa-solid fa-truck"></i>
+                        </div>
+                    </div>
+                    <div class="discount">
+                        <p>-50%</p>
+                    </div>
+                </div>
+                <div class="store-card">
+                    <div class="store-card-container">
+                        <div class="store-image-card-container">
+                            <img src="./Images/1c9d6cf772853d23d56fdc1265ea60c7aa89b46b668b023a834ba00e886d.jpeg" alt="">
+                        </div>
+                        <div class="store-label">
+                            <p>Chicken</p>
+                        </div>
+                    </div>
+                    <div class="store-heading">
+                        <h3>Sta Xpress</h3>
+                    </div>
+                    <div class="store-likes">
+                        <div class="store-likes-image-container">
+                            <img src="./Images/rating_good.png" alt="">
+                        </div>
+                        <div class="numberOfLikes">
+                            <p>93%</p>
+                        </div>
+                        <div class="likes-delivery">
+                            <i class="fa-solid fa-truck"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="store-card">
+                    <div class="store-card-container">
+                        <div class="store-image-card-container">
+                            <img src="./Images/f7bf589b518339b07968efbaa46ab47bc412e9577e313b107d95da58d8c0.jpeg" alt="">
+                        </div>
+                        <div class="store-label">
+                            <p>Chicken</p>
+                        </div>
+                    </div>
+                    <div class="store-heading">
+                        <h3>Ugaroll</h3>
+                    </div>
+                    <div class="store-likes">
+                        <div class="store-likes-image-container">
+                            <img src="./Images/rating_good.png" alt="">
+                        </div>
+                        <div class="numberOfLikes">
+                            <p>96%</p>
+                        </div>
+                        <div class="likes-delivery">
+                            <i class="fa-solid fa-truck"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="store-card">
+                    <div class="store-card-container">
+                        <div class="store-image-card-container">
+                            <img src="./Images/301efc23367198c0d3ec0f5b4c50114fa37870b58454591d6b3c04160835.jpeg" alt="">
+                        </div>
+                        <div class="store-label">
+                            <p>Chicken</p>
+                        </div>
+                    </div>
+                    <div class="store-heading">
+                        <h3>Cafe Javas</h3>
+                    </div>
+                    <div class="store-likes">
+                        <div class="store-likes-image-container">
+                            <img src="./Images/rating_good.png" alt="">
+                        </div>
+                        <div class="numberOfLikes">
+                            <p>98%</p>
+                        </div>
+                        <div class="likes-delivery">
+                            <i class="fa-solid fa-truck"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="store-card">
+                    <div class="store-card-container">
+                        <div class="store-image-card-container">
+                            <img src="./Images/3941fe88ea36c1123ad291c21f32afe6a8794e893cea62a6f588458643bd.jpeg" alt="">
+                        </div>
+                        <div class="store-label">
+                            <p>Halal</p>
+                        </div>
+                    </div>
+                    <div class="store-heading">
+                        <h3>Middle East Restaurant(Halal...)</h3>
+                    </div>
+                    <div class="store-likes">
+                        <div class="store-likes-image-container">
+                            <img src="./Images/rating_good.png" alt="">
+                        </div>
+                        <div class="numberOfLikes">
+                            <p>92%</p>
+                        </div>
+                        <div class="likes-delivery">
+                            <i class="fa-solid fa-truck"></i>
+                        </div>
+                    </div>
+                    <div class="discount">
+                        <p>-50%</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="categories">
+            <div class="flex-container">
+                <div class="category-image-container">
+                    <img src="./Images/cities.svg" alt="">
+                </div>
+                <div class="categories-heading">
+                    <h3>Top Categories in Kampala</h3>
+                </div>
+            </div>
+            <div class="categories-container">
+                <a href="#">Fast food</a>
+                <a href="#">Chicken</a>
+                <a href="#">Snacks</a>
+                <a href="#">Pizza</a>
+                <a href="#">Burgers</a>
+                <a href="#">Local food</a>
+                <a href="#">Indian</a>
+                <a href="#">Grill</a>
+                <a href="#">Healthy</a>
+                <a href="#">Sandwich</a>
+            </div>
+        </section>
+        <section id="together">
+            <div class="together-icon">
+                <img src="./Images/together-opt.svg" alt="">
+            </div>
+            <div class="together-heading">
+                <h3>Let's do it together</h3>
+            </div>
+            <div class="together-card">
+                <div class="together-image-container">
+                    <img src="./Images/rider-image-opt.png" alt="">
+                </div>
+                <div class="together-text">
+                    <h3>Become a rider</h3>
+                    <p>Enjoy flexibility, freedom and competitive earnings by delivering through Glovo.</p>
+                    <button type="button" class="registerBtn">Register here</button>
+                </div>
+            </div>
+            <div class="together-card">
+                <div class="together-image-container">
+                    <img src="./Images/careers-image-opt.png" alt="">
+                </div>
+                <div class="together-text">
+                    <h3>Careers</h3>
+                    <p>Ready for an exciting new challenge? If you’re ambitious, humble, and love working with others, then we want to hear from you!.</p>
+                    <button type="button" class="registerBtn">Register here</button>
+                </div>
+            </div>
+            <div class="together-card">
+                <div class="together-image-container">
+                    <img src="./Images/partners-image-opt.png" alt="">
+                </div>
+                <div class="together-text">
+                    <h3>Become a partner</h3>
+                    <p>Ready for an exciting new challenge? If you’re ambitious, humble, and love working with others, then we want to hear from you!</p>
+                    <button type="button" class="registerBtn">Register here</button>
+                </div>
+            </div>
+        </section>
+        <footer id="footer" class="footer">
+            <div class="min-together">
+                <div class="footer-glovo">
+                    <a href="#">
+                        <img src="./Images/glovo-white.svg" alt="">
+                    </a>
+                </div>
+                <div class="min-together-text">
+                    <h3>
+                        <a href="#">
+                            Let's do it together
+                        </a>
+                    </h3>
+                    <p>
+                        <a href="#">
+                            Careers
+                        </a>
+                    </p>
+                    <p>
+                        <a href="#">
+                            Glovo for Partners
+                        </a>
+                    </p>
+                    <p>
+                        <a href="#">
+                            Couriers
+                        </a>
+                    </p>
+                    <p>
+                        <a href="#">
+                            Glovo Business
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="interests">
+                <h3>Links of interest</h3>
+                <p>
+                    <a href="#">
+                        About us
+                    </a>
+                </p>
+                <p>
+                    <a href="#">
+                        FAQ
+                    </a>
+                </p>
+                <p>
+                    <a href="#">
+                        Glovo Prime
+                    </a>
+                </p>
+                <p>
+                    <a href="#">
+                        Blog
+                    </a>
+                </p>
+                <p>
+                    <a href="#">
+                        Contact us
+                    </a>
+                </p>
+                <p>
+                    <a href="#">
+                        Security
+                    </a>
+                </p>
+            </div>
+            <div class="follow-us">
+                <h3>Follow us</h3>
+                <p>
+                    <a href="#">
+                        Facebook
+                    </a>
+                </p>
+                <p>
+                    <a href="#">
+                        Twitter
+                    </a>
+                </p>
+                <p>
+                    <a href="#">
+                        Instagram
+                    </a>
+                </p>
+            </div>
+            <div class="follow-us">
+                <h3><a href="#">KFC</a></h3>
+                <p>
+                    <a href="#">
+                        Carrefour
+                    </a>
+                </p>
+            </div>
+            <div class="categories">
+                <h3>Top categories: Uganda</h3>
+                <p><a href="#">
+                    Pizza
+                </a></p>
+                <p>
+                    <a href="#">
+                        Sushi
+                    </a>
+                </p>
+                <p>
+                    <a href="#">
+                        Chinese
+                    </a>
+                </p>
+                <p>
+                    <a href="#">
+                        Asian
+                    </a>
+                </p>
+                <p>
+                    <a href="#">
+                        Wine
+                    </a>
+                </p>
+                <p>
+                    <a href="#">Pharmacy</a>
+                </p>
+                <p>See all categories</p>
+            </div>
+            <div class="app-store-google-play">
+                <div class="app-store">
+                    <a href="#">
+                        <img src="./Images/download-button-new.svg" alt="">
+                    </a>
+                </div>
+                <div class="google-play">
+                    <a href="#">
+                        <img src="./Images/download-button-new (1).svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="terms-condition">
+                <h3>
+                    <a href="#">
+                        TERMS & CONDITIONS
+                    </a>
+                </h3>
+                <h3>
+                    <a href="#">
+                        PRIVACY POLICY
+                    </a>
+                </h3>
+                <h3>
+                    <a href="#">
+                        COOKIES
+                    </a>
+                </h3>
+                <h3>
+                    <a href="#">
+                        COMPLIANCE
+                    </a>
+                </h3>
+            </div>
+        </footer>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
