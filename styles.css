@@ -181,7 +181,7 @@ body .food-container {
     font-weight: bold;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .product-card {
     background: #e2e8f0;
     width: 100%;
