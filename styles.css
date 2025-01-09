@@ -590,6 +590,30 @@ body .food-container {
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   }
 }
+@media (max-width: 768px) {
+  #stores {
+    background: #e2e8f0;
+    padding: 0.5rem;
+  }
+  #stores .stores-heading {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 0rem;
+  }
+  #stores .stores-heading i {
+    color: #FFC244;
+    font-size: 1.5rem;
+  }
+  #stores .stores-heading p {
+    font-weight: bold;
+  }
+  #stores .store-cards-container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
 
 #categories {
   background: #e2e8f0;
