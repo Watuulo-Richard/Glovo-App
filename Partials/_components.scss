@@ -12,19 +12,51 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    .product-card-image {
-        width: 3rem;
-        & img {
-            width: 100%;
-            height: 100%;
-            display: block;
+    & a {
+        text-decoration: none;
+        color: $text-color;
+        .product-card-image {
+            width: 3rem;
+            & img {
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+        }
+        .product-card-text {
+            & p {
+                font-size: .5rem;
+                font-weight: bold;
+            }
         }
     }
-    .product-card-text {
-        & p {
-            font-size: .5rem;
-            font-weight: bold;
+    @media (max-width:1024px){
+        background: $button-color;
+    width: 60%;
+    min-height: 20vh;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    & a {
+        text-decoration: none;
+        color: $text-color;
+        .product-card-image {
+            width: 8rem;
+            & img {
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
         }
+        .product-card-text {
+            & p {
+                font-size: 1.35rem;
+                font-weight: bold;
+            }
+        }
+    }
     }
 }
 
@@ -98,5 +130,77 @@
 
             }
         }
+    }
+    @media(max-width: 1024px) {
+    width: 100%;
+    position: relative;
+    .discount {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-50%, -50%);
+        & p {
+            font-size: .8rem;
+            font-weight: 600;
+            background: $bg-color;
+            padding: .1rem;
+            border-radius: .3rem;
+        }
+    }
+    .store-card-container {
+        position: relative;
+        .store-image-card-container {
+            width: 100%;
+            border-radius: .3rem;
+            overflow: hidden;
+            & img {
+                width: 100%;
+                height: 100%;
+                display: block;
+                object-fit: cover;
+            }
+        }
+        .store-label {
+            position: absolute;
+            bottom: 5%;
+            left: 2.5%;
+            background: #020617;
+            backdrop-filter: blur(5px);
+            padding: .25rem;
+            border-radius: .25rem;
+            & p {
+                color: $button-color;
+                font-size: .6rem;
+            }
+        }
+    }
+    .store-heading {
+        & h3 {
+            font-size: 1rem;
+        }
+    }
+    .store-likes {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        .store-likes-image-container {
+            width: 1.5rem;
+            & img {
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+        }
+        .numberOfLikes {
+            & p {
+
+            }
+        }
+        .likes-delivery {
+            & i {
+
+            }
+        }
+    }
     }
 }

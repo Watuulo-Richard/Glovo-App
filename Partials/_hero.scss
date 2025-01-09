@@ -74,14 +74,45 @@
         .first-row {
             display: flex;
             justify-content: space-between;
+            align-items: center;
+            text-align: center;
         }
         .second-row {
             display: flex;
             justify-content: center;
+            align-items: center;
+            text-align: center;
         }
         .third-row {
             display: flex;
             justify-content: space-between;
+            align-items: center;
+            text-align: center;
+        }
+        @media (max-width:1024px){
+            margin: 0rem 20%;
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+        .first-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+            align-items: center;
+            text-align: center;
+        }
+        .second-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .third-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+            align-items: center;
+            text-align: center;
+        }
         }
     }
 }

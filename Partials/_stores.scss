@@ -20,4 +20,27 @@
         gap: 1rem;
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
+    @media (max-width: 1024px){
+        background: $button-color;
+    padding: .5rem;
+    // width: 100%;
+    .stores-heading {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        padding: 1rem 0rem;
+        & i {
+            color: $bg-color;
+            font-size: 1.5rem;
+        }
+        & p {
+            font-weight: bold;
+        }
+    }
+    .store-cards-container {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    }
+    }
 }
